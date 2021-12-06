@@ -1,0 +1,141 @@
+{
+  "explain": {
+    "zh": "应用插件第二版演示Demo",
+    "en": "Demo of application plug-in version 2"
+  },
+  "formData": [
+    {
+      "key": "instanceId",
+      "name": { "zh": "enterpriseId", "en": "enterpriseId" },
+      "type": "input",
+      "show": false,
+      "send": true
+    },
+    {
+      "key": "uuid",
+      "name": { "zh": "uuid", "en": "uuid" },
+      "type": "input",
+      "show": false,
+      "send": true
+    },
+    {
+      "key": "logoUuid",
+      "name": { "zh": "应用图标", "en": "Application Logo" },
+      "type": "file",
+      "show": true,
+      "send": true
+    },
+    {
+      "key": "purchaseId",
+      "name": { "zh": "应用ID", "en": "Application ID" },
+      "type": "input",
+      "readonly": true,
+      "show": true,
+      "send": true
+    },
+    {
+      "key": "name",
+      "name": { "zh": "应用名称", "en": "Application Name" },
+      "type": "input",
+      "readonly": false,
+      "placeholder": { "zh": "请填写应用名称", "en": "Please enter the Name" },
+      "rules": { "required": true, "message": "此项不能为空", "trigger": "blur" },
+      "show": true,
+      "send": true
+    },
+    {
+      "key": "deviceTypes",
+      "name": { "zh": "应用类型", "en": "Application Type" },
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "WEB",
+          "value": {
+            "zh": "WEB",
+            "en": "WEB"
+          },
+          "disabled": false
+        }
+      ],
+      "description": { "zh": "“Web应用”和“PC客户端”只会在用户Web使用环境中显示，“移动应用”只会在用户客户端中显示，如果想在多个环境中都显示应用则勾选多个。", "en": "\"Mobile app\" will only be displayed in the user client,If you want to display apps in multiple environments, check multiple apps." },
+      "rules": { "required": true, "message": "此项不能为空", "trigger": "change", "type": "array" },
+      "show": true,
+      "send": true
+    },
+    {
+      "key": "field",
+      "name": { "zh": "field", "en": "field" },
+      "type": "input",
+      "show": false,
+      "send": true
+    },
+    {
+      "key": "loginUrl",
+      "name": {
+        "zh": "登录地址",
+        "en": "Login Url"
+      },
+      "type": "input",
+      "readonly": false,
+      "placeholder": {
+        "zh": "请填写登录地址",
+        "en": "Please enter the Login Url"
+      },
+      "rules": {
+        "required": false,
+        "message": "此项不能为空",
+        "trigger": "blur"
+      },
+      "show": true,
+      "send": true
+    },
+    {
+      "key": "key",
+      "name": {
+        "zh": "密钥",
+        "en": "Key"
+      },
+      "type": "input",
+      "readonly": false,
+      "placeholder": {
+        "zh": "请填写密钥",
+        "en": "Please enter the Key"
+      },
+      "rules": {
+        "required": false,
+        "message": "此项不能为空",
+        "trigger": "blur"
+      },
+      "show": true,
+      "send": true
+    },
+    {
+      "key":"display",
+      "name":{
+        "zh":"是否显示应用",
+        "en":"Display Application"
+      },
+      "type":"switch",
+      "disabled":false,
+      "description":{
+        "zh":"授权给用户后，是否在用户首页显示。",
+        "en":"Whether to display the application on the user homepage after a user is authorized to access the application."
+      },
+      "rules":{
+        "required":false,
+        "message":"此项不能为空",
+        "trigger":"change",
+        "type":"boolean"
+      },
+      "show":true,
+      "send":true
+    },
+    {
+      "key": "accountLinkingTemplateUuid",
+      "type": "accountLinkingNewPlugin",
+      "templateTypeCodes": ["USERNAME_PASSWORD", "USER_MAPPING"],
+      "show": true,
+      "send": true
+    }
+  ]
+}

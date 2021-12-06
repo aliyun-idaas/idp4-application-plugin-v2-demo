@@ -1,0 +1,114 @@
+{
+  "detailsData": [
+    {
+      "key": "instanceId",
+      "name": { "zh": "enterpriseId", "en": "enterpriseId"},
+      "description": { "zh": "", "en": ""},
+      "show": false
+    },
+    {
+      "key": "applicationUuid",
+      "name": { "zh": "uuid", "en": "uuid"},
+      "description": { "zh": "", "en": ""},
+      "show": false
+    },
+    {
+      "key": "applicationId",
+      "name": { "zh": "应用模板ID", "en": "Application Template ID"},
+      "description": { "zh": "", "en": ""},
+      "show": false
+    },
+    {
+      "key": "logoUuid",
+      "name": { "zh": "图标", "en": "Logo"},
+      "description": { "zh": "", "en": ""},
+      "show": true
+    },
+    {
+      "key": "purchaseId",
+      "name": { "zh": "应用ID", "en": "ID"},
+      "description": { "zh": "", "en": ""},
+      "show": true
+    },
+    {
+      "key": "name",
+      "name": { "zh": "应用名称", "en": "Name"},
+      "description": { "zh": "", "en": ""},
+      "show": true
+    },
+    {
+      "key": "field",
+      "name": { "zh": "领域", "en": "Field"},
+      "description": { "zh": "", "en": ""},
+      "show": false
+    },
+    {
+      "key": "loginUrl",
+      "name": {
+        "zh": "登录地址",
+        "en": "Login Url"
+      },
+      "description": {
+        "zh": "",
+        "en": ""
+      },
+      "show": true
+    },
+    {
+      "key": "key",
+      "name": {
+        "zh": "密钥",
+        "en": "Key"
+      },
+      "description": {
+        "zh": "",
+        "en": ""
+      },
+      "show": true
+    },
+    {
+      "key": "enabled",
+      "name": { "zh": "应用状态", "en": "Application Status"},
+      "description": { "zh": "", "en": ""},
+      "textFormat": "enabled",
+      "show": true
+    },
+    {
+      "key": "templateDto.templateName",
+      "name": {
+        "zh": "账户关联方式",
+        "en": "Account Linking Type"
+      },
+      "description": {
+        "zh": "",
+        "en": ""
+      },
+      "show": false
+    },
+    {
+      "key": "creator",
+      "name": { "zh": "创建人", "en": "Creator"},
+      "description": { "zh": "", "en": ""},
+      "show": true
+    },
+    {
+      "key": "createTime",
+      "name": { "zh": "创建时间", "en": "CreateTime"},
+      "description": { "zh": "", "en": ""},
+      "show": true
+    },
+    {
+      "key":"display",
+      "name":{
+        "zh":"是否显示",
+        "en":"Display Application"
+      },
+      "description":{
+        "zh":"",
+        "en":""
+      },
+      "textFormat":"Boolean",
+      "show":true
+    }
+  ]
+}

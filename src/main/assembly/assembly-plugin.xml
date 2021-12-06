@@ -1,0 +1,87 @@
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+
+    <id>jar-with-plugin</id>
+
+    <formats>
+        <format>jar</format>
+    </formats>
+
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <dependencySets>
+        <dependencySet>
+            <!--<outputDirectory>/</outputDirectory>-->
+            <useProjectArtifact>true</useProjectArtifact>
+            <unpack>true</unpack>
+            <scope>runtime</scope>
+            <!-- runtime中已有的依赖 -->
+            <excludes>
+                <exclude>com.idsmanager.idp:auth-core</exclude>
+                <exclude>org.slf4j:slf4j-api</exclude>
+                <exclude>com.idsmanager.boot:micro-commons</exclude>
+                <exclude>org.springframework:spring-beans</exclude>
+                <exclude>org.springframework:spring-context</exclude>
+                <exclude>org.springframework:spring-web</exclude>
+                <exclude>org.springframework.security:spring-security-core</exclude>
+                <exclude>commons-io:commons-io</exclude>
+                <exclude>org.apache.httpcomponents:httpclient</exclude>
+                <exclude>org.apache.httpcomponents:httpcore</exclude>
+                <exclude>commons-logging:commons-logging</exclude>
+                <exclude>commons-codec:commons-codec</exclude>
+                <exclude>commons-net:commons-net</exclude>
+                <exclude>org.hibernate.javax.persistence:hibernate-jpa-2.1-api</exclude>
+                <exclude>org.hibernate:hibernate-core</exclude>
+                <exclude>org.jboss.logging:jboss-logging</exclude>
+                <exclude>org.javassist:javassist</exclude>
+                <exclude>org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec</exclude>
+                <exclude>org.jboss:jandex</exclude>
+                <exclude>com.fasterxml:classmate</exclude>
+                <exclude>dom4j:dom4j</exclude>
+                <exclude>org.hibernate.common:hibernate-commons-annotations</exclude>
+                <exclude>com.google.guava:guava</exclude>
+                <exclude>com.google.code.findbugs:jsr305</exclude>
+                <exclude>com.google.errorprone:error_prone_annotations</exclude>
+                <exclude>com.google.j2objc:j2objc-annotations</exclude>
+                <exclude>org.codehaus.mojo:animal-sniffer-annotations</exclude>
+                <exclude>com.google.zxing:javase</exclude>
+                <exclude>com.google.zxing:core</exclude>
+                <exclude>javax.validation:validation-api</exclude>
+                <exclude>com.idsmanager:idsmanager-ip-checker</exclude>
+                <exclude>com.fasterxml.jackson.core:jackson-annotations</exclude>
+                <exclude>net.sf.json-lib:json-lib</exclude>
+                <exclude>commons-beanutils:commons-beanutils</exclude>
+                <exclude>commons-collections:commons-collections</exclude>
+                <exclude>commons-lang:commons-lang</exclude>
+                <exclude>net.sf.ezmorph:ezmorph</exclude>
+                <exclude>org.antlr:antlr-runtime</exclude>
+                <exclude>org.antlr:stringtemplate</exclude>
+                <exclude>antlr:antlr</exclude>
+                <exclude>org.springframework:spring-tx</exclude>
+                <exclude>org.springframework:spring-core</exclude>
+                <exclude>com.belerweb:pinyin4j</exclude>
+                <exclude>com.idsmanager:idsmanager-oidc</exclude>
+                <exclude>com.idsmanager.sp:CertProvider</exclude>
+                <exclude>org.bouncycastle:bcmail-jdk15</exclude>
+                <exclude>org.bouncycastle:bcprov-jdk15</exclude>
+                <exclude>org.springframework.security:spring-security-web</exclude>
+                <exclude>org.springframework:spring-aop</exclude>
+                <exclude>org.springframework:spring-expression</exclude>
+                <exclude>com.alibaba:fastjson</exclude>
+                <exclude>com.beust:jcommander</exclude>
+                <exclude>commons-io:commons-io</exclude>
+                <exclude>com.google.code.gson:gson</exclude>
+                <exclude>aopalliance:aopalliance</exclude>
+            </excludes>
+        </dependencySet>
+    </dependencySets>
+    <fileSets>
+        <fileSet>
+            <directory>${project.build.directory}/classes</directory>
+            <outputDirectory>/</outputDirectory>
+        </fileSet>
+    </fileSets>
+
+
+
+</assembly>
