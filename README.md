@@ -13,6 +13,7 @@
 - log4j 1.2.14
 - testng 6.1.1
 
+> com.idsmanager.idp.core不对外提供,如需要,请联系项目经理单独提供
 
 ## 如何使用
 > 前提：需要有部署IDaas的实例。
