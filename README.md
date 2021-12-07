@@ -9,7 +9,7 @@
 - 字符编码：UTF-8
 
 ## 使用框架与版本
-- com.idsmanager.idp.core v4.15.0-mysql
+- com.idsmanager.idp.core v4.16.0-mysql
 - log4j 1.2.14
 - testng 6.1.1
 
